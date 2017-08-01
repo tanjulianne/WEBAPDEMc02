@@ -1,0 +1,137 @@
+/* put somewhere in css @media (max-width: something) {
+	hide .mini-profile-container
+}*/
+
+.mini-profile-container {
+	height: 30vw;
+	width: 30%;
+	background-color: white;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	position: relative;
+}
+
+.mini-profile-image {
+	position: relative;
+	width: 100%;
+	height: 40%;
+	overflow: hidden;
+	background-color: black;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.mini-profile-text {
+	padding-top: 5vw;
+	text-align: center;
+}
+
+#mini-profile-cover {
+	width: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+	opacity: 0.7;
+	position: absolute;
+	z-index: 0;
+}
+
+#mini-profile-icon {
+	width: 8vw;
+	height: 8vw;
+	border-radius: 100%;
+	border: 3px solid white;
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+
+.feed-container {
+	width: 60%;
+	background-color: #eee;
+	margin: auto;
+}
+
+.body-container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 1.5vw;
+}
+
+.feed-post-container {
+	width: 100%;
+	background-color: #eee;
+	margin-bottom: 2vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.feed-post-text {
+	background-color: white;
+	padding: 40px;
+	border-radius: 5px;
+}
+
+#feed-icon {
+	height: 6vw;
+	width: 6vw;
+	border-radius: 5px;
+	margin-right: 2vw
+}
+
+#mini-profile-name {
+	font-size: 20px;
+	font-weight: bold; 
+}
+
+#mini-profile-descrip {
+	font-size: 14px;
+}
+
+.username {
+	text-decoration: none;
+	color: #333;
+}
+
+.username:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+}
+
+body {
+	background-color: #eee;
+	font-family:"Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+}
+
+@media (max-width: 767px) {
+	.mini-profile-container{
+		display: none;
+	}
+
+	.feed-container {
+		width: 90%;
+	}
+
+	#feed-icon {
+		height: 10vw;
+		width: 10vw;
+	}
+}
+
+.hidden-post {
+	/*display: none;*/
+	transition: visibility 0s, opacity 0.5s linear;
+}
+
+.hidden-post: hover {
+	display: unset;
+}
